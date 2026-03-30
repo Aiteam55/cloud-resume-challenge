@@ -1,49 +1,226 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
-  color: #000;
+/* ── RESET & BASE ─────────────────────────────── */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-  width: 800px;
-  margin: 40px auto;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-h1 {
-  margin-bottom: 5px;
-}
-
-h2 {
-  margin-top: 0;
-  font-weight: normal;
-}
-
-h3 {
-  border-bottom: 1px solid #000;
-  padding-bottom: 5px;
-  margin-top: 30px;
-}
-
-h4 {
-  margin-bottom: 5px;
-}
-
-span {
-  font-size: 12px;
-  color: #555;
-}
-
-ul {
-  margin-top: 5px;
-}
-
-p {
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 10pt;
+  color: #111;
+  background: #e8e8e8;
   line-height: 1.5;
+}
+
+a {
+  color: #111;
+  text-decoration: underline;
+}
+
+/* ── PAGE ─────────────────────────────────────── */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 24px auto;
+  background: #fff;
+  padding: 22mm 18mm 20mm 18mm;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ── HEADER ───────────────────────────────────── */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #111;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.header-left h1 {
+  font-family: "Georgia", serif;
+  font-size: 20pt;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+.header-left .job-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.5pt;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #444;
+  margin-top: 4px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8.5pt;
+  color: #333;
+  text-align: right;
+  padding-top: 4px;
+}
+
+/* ── BIO ──────────────────────────────────────── */
+.bio {
+  margin-bottom: 16px;
+}
+
+.bio p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ── SECTIONS ─────────────────────────────────── */
+.section {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #111;
+  border-bottom: 1px solid #111;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+.section-body {
+  padding-left: 2px;
+}
+
+/* ── ENTRIES ──────────────────────────────────── */
+.entry {
+  margin-bottom: 11px;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.entry-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.5pt;
+  font-weight: bold;
+  color: #111;
+}
+
+.entry-title em {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.entry-date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  color: #555;
+  font-style: italic;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.entry-org {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8.5pt;
+  color: #444;
+  margin-bottom: 2px;
+}
+
+.entry-role {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8.5pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #222;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+/* ── LISTS ────────────────────────────────────── */
+ul {
+  padding-left: 16px;
+  margin-top: 3px;
+}
+
+ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  color: #222;
+  margin-bottom: 3px;
+  line-height: 1.5;
+}
+
+/* ── TECH TAGS ────────────────────────────────── */
+.tech {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  color: #555;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.tech-inline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  color: #555;
+  font-style: italic;
+}
+
+/* ── SKILLS GRID ──────────────────────────────── */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-row {
+  display: flex;
+  gap: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  line-height: 1.5;
+}
+
+.skill-label {
+  font-weight: bold;
+  color: #111;
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+.skill-value {
+  color: #222;
+}
+
+/* ── PRINT ────────────────────────────────────── */
+@media print {
+  body {
+    background: white;
+  }
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    padding: 15mm 15mm;
+  }
 }

@@ -2,104 +2,333 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Mitia Andriandimbihery - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitia Kanto Andriandimbihery – Resume</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Mitia Kanto Andriandimbihery</h1>
-        <h2>Java Software Engineer</h2>
-        <p>
-          Antananarivo, Madagascar | +261 34 49 590 17<br />
-          mitia.andriandimbihery@gmail.com<br />
-          LinkedIn: linkedin.com/in/mitiaandriandimbihery
-        </p>
+    <div class="page">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-left">
+          <h1>Mitia Kanto Andriandimbihery</h1>
+          <p class="job-title">Cloud &amp; DevOps Engineer</p>
+        </div>
+        <div class="header-right">
+          <span>mitia.andriandimbihery@gmail.com</span>
+          <span>Antananarivo, Madagascar</span>
+          <span>+261 34 49 590 17</span>
+        </div>
       </header>
 
-      <section>
-        <h3>Professional Summary</h3>
+      <!-- BIO -->
+      <section class="bio">
         <p>
-          Software Engineer with 4 years of experience in web and mobile
-          development. Experienced in building scalable, secure applications
-          with growing expertise in Cloud and DevOps.
+          Software engineer with 5+ years of experience designing and developing
+          web and mobile applications across finance, telecom, and HR sectors.
+          Currently transitioning toward
+          <strong>Cloud &amp; DevOps engineering</strong>, with hands-on
+          experience provisioning AWS infrastructure with Terraform, building
+          CI/CD pipelines with GitLab CI and Jenkins, and containerizing
+          applications with Docker. AWS Certified Cloud Practitioner. Passionate
+          about Infrastructure as Code, automated deployments, and building
+          scalable, reliable cloud systems.
         </p>
       </section>
 
-      <section>
-        <h3>Professional Experience</h3>
-
-        <h4>Junior IT Project Manager – Pulse</h4>
-        <span>Since May 2025</span>
-        <ul>
-          <li>Project planning and workload tracking</li>
-          <li>Team coordination</li>
-          <li>Technical decision contribution</li>
-        </ul>
-
-        <h4>Software Engineer – Pulse</h4>
-        <span>Jan 2022 – Apr 2025</span>
-
-        <p><strong>Mobile Lead Developer</strong></p>
-        <ul>
-          <li>Code reviews and best practices</li>
-          <li>App maintenance and deployment</li>
-          <li>1000+ downloads</li>
-        </ul>
-
-        <p><strong>Fullstack Developer</strong></p>
-        <ul>
-          <li>SIM registration system</li>
-          <li>Security compliance</li>
-          <li>3000+ users</li>
-        </ul>
+      <!-- SOCIAL -->
+      <section class="section">
+        <h2 class="section-title">Social</h2>
+        <div class="section-body">
+          <p>
+            <a
+              href="https://www.linkedin.com/in/mitiaandriandimbihery"
+              target="_blank"
+              >@mitiaandriandimbihery</a
+            >
+          </p>
+        </div>
       </section>
 
-      <section>
-        <h3>Projects</h3>
+      <!-- CLOUD & DEVOPS PROJECTS -->
+      <section class="section">
+        <h2 class="section-title">Cloud &amp; DevOps Projects</h2>
+        <div class="section-body">
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title"
+                >ReactJS App Deployment on AWS Elastic Beanstalk</span
+              >
+            </div>
+            <ul>
+              <li>
+                Built a ReactJS front-end (GameHub) for a video game catalogue
+                and containerized it with <strong>Docker</strong>.
+              </li>
+              <li>
+                Deployed to <strong>AWS Elastic Beanstalk</strong>, configuring
+                environments and AWS environment variables for a fully managed
+                cloud deployment.
+              </li>
+            </ul>
+          </div>
 
-        <h4>AWS Elastic Beanstalk Deployment</h4>
-        <ul>
-          <li>React app (GameHub)</li>
-          <li>Dockerized application</li>
-        </ul>
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title"
+                >Infrastructure as Code + CI/CD — ReactJS on EC2 with Jenkins
+                &amp; Terraform</span
+              >
+            </div>
+            <ul>
+              <li>
+                Provisioned AWS infrastructure (EC2, VPC, security groups) from
+                scratch using <strong>Terraform</strong>, applying a full
+                Infrastructure as Code approach.
+              </li>
+              <li>
+                Configured a <strong>Jenkins</strong> pipeline to automate
+                build, test, and deployment — zero manual steps from commit to
+                production.
+              </li>
+            </ul>
+          </div>
 
-        <h4>Terraform + Jenkins CI/CD</h4>
-        <ul>
-          <li>AWS infrastructure provisioning</li>
-          <li>CI/CD automation</li>
-        </ul>
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title"
+                >S3 File Upload Service — Java Spring Boot &amp; ReactJS</span
+              >
+            </div>
+            <ul>
+              <li>
+                Developed a <strong>Spring Boot</strong> backend using the
+                <strong>AWS SDK</strong> to upload files directly to an S3
+                bucket.
+              </li>
+              <li>
+                Built a ReactJS interface for file selection and upload,
+                demonstrating full-stack cloud-native integration.
+              </li>
+            </ul>
+          </div>
 
-        <h4>S3 File Upload</h4>
-        <ul>
-          <li>Spring Boot backend</li>
-          <li>React frontend</li>
-        </ul>
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title"
+                >Node.js Deployment on EC2 with GitLab CI/CD</span
+              >
+            </div>
+            <ul>
+              <li>
+                Designed a <strong>GitLab CI pipeline</strong> to automate
+                build, test, and deployment of a Node.js app to an
+                <strong>AWS EC2</strong> instance.
+              </li>
+              <li>
+                Managed SSH key configuration, GitLab CI variables, and Bash
+                scripts for a fully repeatable release process.
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h3>Skills</h3>
-        <p>
-          Java, Spring Boot, React, Flutter, AWS, Docker, Terraform, GitLab
-          CI/CD, MySQL, PostgreSQL
-        </p>
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="section-body">
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title"
+                >Junior IT Project Manager — <em>Pulse</em></span
+              >
+              <span class="entry-date">May 2025 - January 2026</span>
+            </div>
+            <ul>
+              <li>
+                Drive technical project planning, scheduling, and resource
+                tracking.
+              </li>
+              <li>
+                Coordinate cross-functional technical and business teams aligned
+                to product objectives.
+              </li>
+              <li>
+                Contribute to architectural decisions and task prioritisation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title"
+                >Confirmed Software Engineer — <em>Pulse</em></span
+              >
+              <span class="entry-date">January 2022 – April 2025</span>
+            </div>
+            <p class="entry-role">Mobile Lead Developer</p>
+            <ul>
+              <li>
+                Established engineering best practices: code reviews, codebase
+                structuring, Git branching strategy, and unit test integration
+                via <strong>GitHub Actions</strong>.
+              </li>
+              <li>
+                Maintained and extended an employee management app; led its
+                deployment to
+                <strong>Google Play Store &amp; App Store</strong> — surpassing
+                <strong>1,000 downloads</strong>.
+              </li>
+              <li class="tech">Technologies: Flutter, Firebase, GetX</li>
+            </ul>
+            <p class="entry-role">Fullstack Developer</p>
+            <ul>
+              <li>
+                Maintained and improved a SIM card registration management
+                platform (web + mobile), ensuring security compliance and UX
+                optimisation — used by over <strong>3,000 agents</strong>.
+              </li>
+              <li class="tech">
+                Technologies: Java, Spring Boot, Angular, Android
+              </li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title"
+                >Junior Software Engineer — <em>Pulse</em></span
+              >
+              <span class="entry-date">February 2021 – December 2021</span>
+            </div>
+            <ul>
+              <li>
+                Maintained and improved a multi-loan management application,
+                implementing new features to enhance the user experience.
+                <span class="tech-inline"
+                  >Technologies: Java Spring Boot, MariaDB</span
+                >
+              </li>
+              <li>
+                Developed a secure, high-performance troubleshooting service for
+                the telecommunications industry.
+                <span class="tech-inline"
+                  >Technologies: Java Spring Boot, ReactJS</span
+                >
+              </li>
+              <li>
+                Designed and developed a real-time weather mobile application
+                providing users with up-to-date forecasts.
+                <span class="tech-inline">Technologies: Java, Android</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h3>Certifications</h3>
-        <p>AWS Certified Cloud Practitioner</p>
-        <p>GitLab CI Fundamentals</p>
+      <!-- CERTIFICATIONS -->
+      <section class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-body">
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title">AWS Certified Cloud Practitioner</span>
+              <span class="entry-date">December 2024</span>
+            </div>
+            <p class="entry-org">
+              Amazon Web Services Training &amp; Certification
+            </p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title">GitLab CI Fundamentals</span>
+              <span class="entry-date">February 2024</span>
+            </div>
+            <p class="entry-org">GitLab University</p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h3>Education</h3>
-        <p>Master’s in Big Data – IT University</p>
-        <p>Bachelor’s in Computer Science</p>
+      <!-- EDUCATION -->
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="section-body">
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title"
+                >M.Sc. BIHAR — Big Data, Intelligence &amp; Human Augmented
+                Reality</span
+              >
+              <span class="entry-date">September 2021 – December 2022</span>
+            </div>
+            <p class="entry-org">IT University – ESTIA</p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title">B.Sc. Computer Science</span>
+              <span class="entry-date">November 2017 – 2021</span>
+            </div>
+            <p class="entry-org">
+              IT University Andoharanofotsy &nbsp;·&nbsp; Degree awarded July
+              2023
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h3>Languages</h3>
-        <p>English (Advanced), French (Fluent), Malagasy (Native)</p>
+      <!-- SKILLS -->
+      <section class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-body skills-grid">
+          <div class="skill-row">
+            <span class="skill-label">Cloud &amp; DevOps</span>
+            <span class="skill-value"
+              >AWS · Terraform · Docker · CI/CD · GitLab CI · GitHub Actions ·
+              Jenkins</span
+            >
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Development</span>
+            <span class="skill-value"
+              >Java · JavaScript · TypeScript · Spring Boot · ReactJS · Angular
+              · Flutter · Dart · Node.js · Tailwind CSS</span
+            >
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Databases</span>
+            <span class="skill-value"
+              >MySQL · PostgreSQL · MariaDB · Firebase</span
+            >
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Tools &amp; Methods</span>
+            <span class="skill-value"
+              >Git · Agile / Scrum · Jira · Confluence</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section class="section">
+        <h2 class="section-title">Languages</h2>
+        <div class="section-body skills-grid">
+          <div class="skill-row">
+            <span class="skill-label">English</span
+            ><span class="skill-value">Advanced</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">French</span
+            ><span class="skill-value">Fluent</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Malagasy</span
+            ><span class="skill-value">Native</span>
+          </div>
+        </div>
       </section>
     </div>
   </body>
